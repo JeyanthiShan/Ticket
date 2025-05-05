@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('assets/background-desktop.png'),url('assets/pattern-circle.svg'),url('assets/pattern-lines.svg'),url('assets/pattern-squiggly-line-bottom-desktop.svg'),url('assets/pattern-squiggly-line-top.svg');
+   
+  background-size: cover;
+ 
+  
+ 
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

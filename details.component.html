@@ -1,0 +1,48 @@
+<div class="header-title">
+  <img src="assets/logo-full.svg" alt="logo" class="image-detail" />
+</div>
+
+<div class="content">
+  <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+  <h4>Secure your spot at next year's biggest coding conference</h4>
+</div>
+
+<div class="form-container">
+  <h3>Upload Avatar</h3>
+  <div class="upload-box" (click)="fileInput.click()">
+    <ng-container *ngIf="avatarPreview; else uploadIcon">
+      <img [src]="avatarPreview" class="avatar-preview" />
+    </ng-container>
+    <ng-template #uploadIcon>
+      <mat-icon class="upload-icon">cloud_upload</mat-icon>
+      <p>Click to upload</p>
+    </ng-template>
+    <input #fileInput type="file" accept="image/png, image/jpeg" hidden (change)="onFileSelected($event)" />
+  </div>
+
+  <div class="info-text">
+    <mat-icon>info</mat-icon>
+    <span>JPG or PNG, max 500KB</span>
+  </div>
+
+  <form [formGroup]="form">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Full Name</mat-label>
+      <input matInput placeholder="Enter your name" formControlName="fullName" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email Address</mat-label>
+      <input matInput placeholder="example@email.com" formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>GitHub Username</mat-label>
+      <input matInput placeholder="@yourusername" formControlName="github" />
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" class="submit-btn" (click)="generateTicket()">
+      Generate My Ticket
+    </button>
+  </form>
+</div>

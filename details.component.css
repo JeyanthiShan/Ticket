@@ -1,0 +1,212 @@
+.header-title {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.image-detail {
+    width: 145px;
+    height: 40px;
+}
+/* .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.content {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 400;
+    color: white;
+    font-family: cursive;
+  }
+  
+  .content h4 {
+    font-size: inherit;
+    margin-top: 20px;
+    color: white;
+    font-family: cursive;
+    font-style: normal !important;
+  }
+  .form-container {
+    width: 350px;
+    background: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    justify-self: center;
+  }
+  
+  .upload-box {
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 30px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .upload-box:hover {
+    border-color: #ff6f61;
+  }
+  
+  .upload-box mat-icon {
+    font-size: 36px;
+    color: #ff6f61;
+  }
+  
+  .upload-box p {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  
+  .info-text {
+    font-size: 12px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: -8px;
+  }
+  
+  mat-form-field.full-width {
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.08); */
+    border-radius: 6px;
+    color: white !important;
+  }
+  
+  mat-form-field input {
+    color: white !important;
+  }
+  .full-width:hover .mat-mdc-form-field-outline:hover {
+    color: #f3f0f0 !important;
+  }
+  .full-width:hover {
+    color: white !important;
+    border-color: white !important;
+  }
+  
+  .full-width:hover input {
+    color: white !important;
+  }
+ mat-form-field.full-width:hover {
+  color: white !important;
+ }
+  
+  
+  .submit-btn {
+    background-color: #ff6f61 !important;
+    color: black !important;
+    font-weight: normal;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .congrats-section {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .ticket-preview {
+    display: block;
+    margin: auto;
+    border: 2px solid #ccc;
+  }
+  .avatar-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+  }
+  .upload-icon {
+    height: 30px;
+    width: 36px;
+  }
+  /* Mobile responsiveness for screens <= 600px */
+@media (max-width: 600px) {
+  .header-title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-detail {
+    width: 100px;
+    height: auto;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content h4 {
+    font-size: 0.95rem;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .upload-box {
+    padding: 20px 8px;
+  }
+
+  .upload-box mat-icon {
+    font-size: 28px;
+  }
+
+  .upload-box p {
+    font-size: 13px;
+  }
+
+  .info-text {
+    font-size: 11px;
+  }
+
+  mat-form-field.full-width {
+    width: 100%;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .avatar-preview {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ticket-img {
+    width: 95vw !important;
+    max-width: 95vw !important;
+  }
+
+  .content h2 {
+    font-size: 1.3rem;
+  }
+
+  .ticket-preview {
+    max-width: 90vw;
+  }
+}
